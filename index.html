@@ -11,6 +11,20 @@
 
     <body>
       <div id="root"></div>
+        <div id="root" style="position:relative;z-index:1;">
+          <!-- Static fallback content (visible if JS fails) -->
+          <main style="min-height:80vh;display:flex;align-items:center;justify-content:center;color:#fff;padding:2rem;">
+            <div style="max-width:900px;text-align:center;">
+              <h1 style="font-size:2rem;margin-bottom:0.5rem;">SamSoSleepyWeb</h1>
+              <p style="color:rgba(255,255,255,0.85);margin-bottom:1rem;">Welcome — if the site looks empty, JavaScript may have failed to load. You can still browse basic links below.</p>
+              <p>
+                <a href="./" style="color:#60a5fa;text-decoration:underline;margin-right:1rem;">Home</a>
+                <a href="./" style="color:#60a5fa;text-decoration:underline;margin-right:1rem;">Addons</a>
+                <a href="./" style="color:#60a5fa;text-decoration:underline;">Map</a>
+              </p>
+            </div>
+          </main>
+        </div>
     </body>
   </html>
   
