@@ -4,13 +4,21 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Create Gaming Web App</title>
-      <script type="module" crossorigin src="/assets/index-CotlH6uo.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-D0f2A3-g.css">
+      <title>Addon Web App</title>
+      <script type="module" crossorigin src="./assets/index-CotlH6uo.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/index-D0f2A3-g.css">
     </head>
 
     <body>
-      <div id="root"></div>
+      <div id="root" style="position:relative;z-index:1;">
+        <!-- Static fallback content (visible if JS hasn't executed yet) -->
+        <main style="min-height:80vh;display:flex;align-items:center;justify-content:center;color:#fff;padding:2rem;">
+          <div style="max-width:900px;text-align:center;">
+            <h1 style="font-size:2rem;margin-bottom:0.5rem;">SamSoSleepyWeb</h1>
+            <p style="color:rgba(255,255,255,0.85);margin-bottom:1rem;">Loading app... If nothing appears, try a hard refresh.</p>
+          </div>
+        </main>
+      </div>
     </body>
   </html>
   
